@@ -1,38 +1,346 @@
-.App {
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #e0e0e0; /* Light grey text */
+  background-color: #121212; /* Dark black background */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; /* Bold headings for better hierarchy */
+  color: #ffffff; /* White for headings */
+}
+
+p {
+  font-weight: 400; /* Regular weight for paragraphs */
+  color: #e0e0e0; /* Light grey for text */
+}
+
+/* Typography */
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Spacing */
+section {
+  padding: 4rem 2rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #333; /* Dark grey */
+  color: #ffffff; /* White text */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #555; /* Medium grey on hover */
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #ffffff; /* White border */
+  color: #ffffff; /* White text */
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1); /* Slight white overlay on hover */
+}
+
+/* Header Styles */
+header {
+  background: #1a1a1a; /* Slightly lighter black */
+  color: #ffffff;
+  padding: 1rem 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header nav ul {
+  list-style: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Hero Section Styles */
+.hero {
+  background: linear-gradient(135deg, #1a1a1a, #262626); /* Gradient from dark black to dark grey */
+  color: #ffffff;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.hero-buttons .btn {
+  background: #ffffff; /* White background */
+  color: #1a1a1a; /* Dark black text */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+  background: #f0f0f0; /* Light grey on hover */
+}
+
+.hero-buttons .btn-outline {
+  background: transparent;
+  border: 2px solid #ffffff; /* White border */
+  color: #ffffff; /* White text */
+}
+
+.hero-buttons .btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1); /* Slight white overlay on hover */
+}
+
+/* About Section Styles */
+.about {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #1a1a1a; /* Slightly lighter black */
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text {
+  max-width: 800px;
+  text-align: left;
+}
+
+.about-image img {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+  border: 4px solid #333; /* Dark grey border */
+  border-radius: 0; /* Square shape */
+}
+
+.signature img {
+  width: 200px;
+  margin-top: 0.5rem;
+}
+
+/* Projects Section Styles */
+.projects {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #262626; /* Dark grey background */
+}
+
+.project-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-item {
+  width: 30%;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.project-item img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project-type {
+  font-style: italic;
+  color: #b0b0b0; /* Light grey for project type */
+}
+
+/* Popup Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #1a1a1a; /* Slightly lighter black */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content img {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.modal-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff; /* White text */
+}
+
+.modal-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #e0e0e0; /* Light grey text */
+}
+
+.modal-content .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ffffff; /* White close button */
+}
+
+.modal-content .close-btn:hover {
+  color: #b0b0b0; /* Light grey on hover */
+}
+
+/* Contact Section Styles */
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #1a1a1a; /* Slightly lighter black */
+}
+
+.contact-methods {
+  margin-top: 1rem;
+}
+
+.contact-methods .btn {
+  margin: 0.5rem;
+  background: #333; /* Dark grey */
+  color: #ffffff; /* White text */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.contact-methods .btn:hover {
+  background: #555; /* Medium grey on hover */
+}
+
+/* Footer Styles */
+footer {
+  background: #121212; /* Dark black background */
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* GitHub Button Styles */
+.github-link {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #333;
   color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.github-btn:hover {
+  background: #444;
+  transform: translateY(-2px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.github-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Modal Content Adjustments */
+.modal-content {
+  /* ... existing styles ... */
+  max-width: 700px; /* Slightly wider for better content display */
+}
+
+.modal-content p {
+  margin-bottom: 0.5rem;
 }
