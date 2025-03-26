@@ -3,13 +3,14 @@ import React from 'react';
 
 const Hero = () => {
     return (
-        <section id="home" className="hero">
+        <section id="home" className="hero" style={{
+            minHeight: '100vh',
+            minHeight: '100dvh' /* New CSS unit for mobile browsers */
+          }}>
             <div className="hero-content" style={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                justifyContent: 'center',
-                gap: '1rem'
-            }}>
+        width: 'min(90%, 1200px)',
+        margin: '0 auto'
+      }}>
                 <h1>Piyush Kumar</h1>
                 <p>Data Scientist | ML Engineer | Available for Freelance Projects</p>
                 {/* <a href="#contact" className="btn">Hire Me</a> */}

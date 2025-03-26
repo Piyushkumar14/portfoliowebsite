@@ -59,10 +59,9 @@ const Projects = () => {
         <section id="projects" className="projects">
             <h2>Projects</h2>
             <div className="project-grid" style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-                gap: '2rem'
-            }}>
+      '--min-column-width': '300px',
+      '--grid-gap': '2rem'
+    }}>
                 {projects.map((project) => (
                     <div
                         key={project.id}
