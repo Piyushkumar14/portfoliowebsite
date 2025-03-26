@@ -58,10 +58,7 @@ const Projects = () => {
     return (
         <section id="projects" className="projects">
             <h2>Projects</h2>
-            <div className="project-grid" style={{
-      '--min-column-width': '300px',
-      '--grid-gap': '2rem'
-    }}>
+            <div className="project-grid">
                 {projects.map((project) => (
                     <div
                         key={project.id}
