@@ -10,7 +10,7 @@ const Projects = () => {
             image: require('../assets/MLinterpretor.webp'),
             description: 'Developed a codeless tool to interpret black-box models like Random Forest and XGBoost, improving model transparency and debugging efficiency. Integrated feature importance insights and misclassification analysis to help data scientists understand model behavior. Built using Python, Streamlit, and Docker for seamless deployment.',
             type: 'Freelance',
-            github: 'https://github.com/yourusername/project1'
+            github: 'https://github.com/Piyushkumar14/ML_Interpretor'
         },
         {
             id: 2,
@@ -18,7 +18,7 @@ const Projects = () => {
             image: require('../assets/skin.webp'),
             description: 'Implemented a deep learning model for skin lesion classification using CNNs, improving early detection accuracy. Trained on the ISIC2017 dataset with data augmentation and validated using metadata analysis. Developed a Flask-based web app for real-time diagnosis and visualization.',
             type: 'Personal',
-            github: 'https://github.com/yourusername/project1'
+            github: 'https://github.com/Piyushkumar14/Skincheck'
         },
         {
             id: 3,
@@ -26,7 +26,7 @@ const Projects = () => {
             image: require('../assets/music.webp'),
             description: 'Enhanced user engagement by 25% with a real-time music recommendation system powered by the Spotify API. Processed over 500 songs dynamically based on genre, tempo, and user preferences using content-based filtering. Built an intuitive Streamlit interface for an interactive user experience.',
             type: 'Personal',
-            github: 'https://github.com/yourusername/project1'
+            github: 'https://github.com/Piyushkumar14/music_recommemdation_system-using-SpotifyAPI'
         },
         {
             id: 4,
@@ -34,7 +34,7 @@ const Projects = () => {
             image: require('../assets/stock.webp'),
             description: 'Developed a stock price forecasting model with 90% accuracy, empowering investors with data-driven financial decisions. Used a Random Forest model to predict trends and built a Flask-based web app for real-time insights. Integrated financial data visualization for better market analysis.',
             type: 'Personal',
-            github: 'https://github.com/yourusername/project1'
+            github: 'https://github.com/Piyushkumar14/Stock_Market_Predictor_ETE'
         },
         {
             id: 5,
@@ -42,7 +42,7 @@ const Projects = () => {
             image: require('../assets/CO2.webp'),
             description: 'Designed a predictive model achieving 95% accuracy in CO2 emission forecasting, assisting environmental analysts in sustainability planning. Implemented an ARIMA-based model with a Streamlit dashboard for interactive visualization. Optimized data analysis workflows to improve forecasting precision.',
             type: 'Personal',
-            github: 'https://github.com/yourusername/project1'
+            github: 'https://github.com/Piyushkumar14/carbon_footprint_forecast'
         },
         // Add more projects as needed
     ];
