@@ -344,3 +344,74 @@ footer {
 .modal-content p {
   margin-bottom: 0.5rem;
 }
+
+
+/* Add this at the BOTTOM of your existing CSS */
+
+/* ===== Responsive Breakpoints ===== */
+@media (max-width: 1199.98px) {
+  .hero h1 { font-size: 3rem; }
+}
+
+@media (max-width: 991.98px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-image img {
+    margin-top: 2rem;
+  }
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero h1 { font-size: 2.5rem; }
+  .hero p { font-size: 1.2rem; }
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  .about-image img {
+    width: 280px;
+    height: 350px;
+  }
+  .modal-content {
+    width: 95%;
+    padding: 1rem;
+  }
+}
+
+/* ===== Fluid Units ===== */
+html { font-size: 16px; }
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+section {
+  padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 3vw, 2rem);
+}
+
+/* ===== Responsive Images ===== */
+.about-image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+}
