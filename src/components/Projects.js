@@ -9,7 +9,7 @@ const Projects = () => {
             title: 'ML Interpretor',
             image: require('../assets/MLinterpretor.webp'),
             description: 'Developed a codeless tool to interpret black-box models like Random Forest and XGBoost, improving model transparency and debugging efficiency. Integrated feature importance insights and misclassification analysis to help data scientists understand model behavior. Built using Python, Streamlit, and Docker for seamless deployment.',
-            type: 'Freelance',
+            type: 'Personal',
             github: 'https://github.com/Piyushkumar14/ML_Interpretor'
         },
         {

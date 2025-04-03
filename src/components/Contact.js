@@ -8,8 +8,6 @@ const Contact = () => {
             <div className="contact-methods">
                 <a href="mailto:pr14122001@gmail.com" className="btn">Email Me</a>
                 <a href="https://linkedin.com/in/piyush-kumar14" target="_blank" rel="noopener noreferrer" className="btn">LinkedIn</a>
-                <a href="https://wa.me/918527891728" target="_blank" rel="noopener noreferrer" className="btn">WhatsApp</a>
-                <a href="/Piyush_ATS_Resume.pdf" download className="btn">Download CV</a>
             </div>
         </section>
     );
